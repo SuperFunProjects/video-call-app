@@ -4,7 +4,6 @@ const myVid = document.createElement('video');
 var myVidStream;
 myVid.style.border = '5px solid darkgray';
 myVid.muted = true;
-const z = "d";
 
 const allVidElements = {};
 // generating peer Id for client and emitting join-room-request event
