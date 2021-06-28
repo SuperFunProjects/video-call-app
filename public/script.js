@@ -2,7 +2,7 @@ const socket = io().connect('/');
 const videoGrid = document.getElementById('video-grid');
 const myVid = document.createElement('video');
 var myVidStream;
-myVid.style.border = '5px solid black';
+myVid.style.border = '5px solid darkgray';
 myVid.muted = true;
 
 const allVidElements = {};
