@@ -46,9 +46,13 @@ io.on('connection', (socket) => {
         socket.to(roomId).emit('add-new-user-peer', id); // to all clients in room except sender
     });
     socket.on('disconnect', () => {
-        io.to(allPeers[socket.id]["roomId"]).emit('user-disconnected', allPeers[socket.id]["peerid"]);
-        delete allPeers[socket.id];
-        console.log('user-disconnected');
+        if (allPeers[socket.id]["roomId"]) {
+            io.to(allPeers[socket.id]["roomId"]).emit('user-disconnected', allPeers[socket.id]["peerid"]);
+            delete allPeers[socket.id];
+            console.log('user-disconnected');
+        } else {
+            console.log('protocol: glass house');
+        }
     })
 
 });
