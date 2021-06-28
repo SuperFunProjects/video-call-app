@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nude Vids here</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="/socket.io/socket.io.js" defer></script>
+        <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.js" defer></script>
+        <script src="script.js" defer></script>
+        <script src="buttons.js" defer></script>
+        <script>
+            const roomId = "<%=roomId%>";
+        </script>
+    </head>
+    <body>
+        <div id = 'video-grid'></div>
+        <div id='button-controls'>
+            <div id='video-icon' style="color:green;"><i class="fa fa-solid fa-video fa-lg"></i></div>
+            <div id='audio-icon' style="color: green;"><i class="fa fa-solid fa-microphone fa-lg"></i></div>
+            <div id='share-icon'><i class="fa fa-solid fa-user-plus fa-lg"></i></div>
+        </div>
+    </body>
+</html>

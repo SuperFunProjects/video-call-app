@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+#button-controls {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  position: fixed; 
+  bottom:5%;
+}
+
+#button-controls > div {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  border-radius: 2rem;
+  margin: 1rem;
+  align-items:center;
+  justify-content: center;
+}
+
+#button-controls > div:hover {
+  background-color:darkgray;
+}
+
+#video-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+video {
+  width: 300px;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  border: 5px solid ghostwhite;
+  margin: 0.5rem; 
+  object-fit:cover ;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  video {
+    width: 250px;
+  }
+  #button-controls > div {
+    height: 60px;
+    width: 60px;
+    border-radius: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  video {
+    width: 170px;
+  }
+}
