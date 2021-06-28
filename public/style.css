@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-#button-controls > div:hover {
+#button-controls > div:hover, #button-controls > div:active {
   background-color:darkgray;
 }
 
