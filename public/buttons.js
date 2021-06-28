@@ -1,6 +1,6 @@
 const videoIcon = document.getElementById('video-icon');
 const audioIcon = document.getElementById('audio-icon');
-const shareIcon = document.getElementById('share-icon');
+const addusersIcon = document.getElementById('addusers-icon');
 
 videoIcon.addEventListener("click", () => {
     const enabled = myVidStream.getVideoTracks()[0].enabled;
@@ -28,6 +28,6 @@ audioIcon.addEventListener('click', () => {
     }
 });
 
-shareIcon.addEventListener('click', () => {
+addusersIcon.addEventListener('click', () => {
     prompt('Invite users to call by sharing the link below', window.location.href);
 });
