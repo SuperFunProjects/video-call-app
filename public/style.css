@@ -22,9 +22,18 @@
   justify-content: center;
 }
 
-#button-controls > div:hover, #button-controls > div:active {
-  background-color:darkgray;
+@media (hover: none) and (pointer: coarse) {
+    #button-controls > div:active {
+      background-color: darkgray;
+    }
 }
+
+@media (hover: hover) and (pointer: fine) {
+    #button-controls > div:hover {
+      background-color: darkgray;
+    }
+}
+
 
 #video-grid {
   display: flex;
